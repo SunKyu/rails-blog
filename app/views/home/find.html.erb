@@ -1,0 +1,12 @@
+<% if @post.nil? %>
+<p> Not Found</p>
+<% else %>
+<p>
+    <%= @post.title %>
+</p>
+<p>
+    <%= @post.body %>
+</p>
+<% end %>
+
+
