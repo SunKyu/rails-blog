@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   ActiveAdmin.routes(self)
   resources :posts
+  get 'find' => 'home#find'
+  get 'find/:id' => 'home#find2'
   root 'home#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
